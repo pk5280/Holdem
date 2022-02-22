@@ -12,7 +12,7 @@ public class Player {
         this.name = name;
         this.stack = stack;
         inHandBet = 0;
-        inHand = false;
+        inHand = true;
         this.cardOne = cardOne;
         this.cardTwo = cardTwo;
     }

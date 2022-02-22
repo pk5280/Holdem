@@ -52,10 +52,13 @@ public class CardsDeck {
 
         private Suit mSuit;
         private Rank mRank;
+        int sortValue;
+        
 
         public Card(Suit suit, Rank rank) {
             this.mSuit = suit;
             this.mRank = rank;
+            this.sortValue = mRank.ordinal() + 2;
         }
 
         public Suit getSuit() {
@@ -129,5 +132,6 @@ public class CardsDeck {
     public boolean isEmpty() {
         return mCards.isEmpty();
     }
+
 
 }
